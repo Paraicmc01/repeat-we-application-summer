@@ -1,0 +1,34 @@
+<div class="row justify-content-center mt-5">
+    <div class="col-md-4">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+          <div class="form-group"  style="margin-left: 40%;">
+            <label style="color: rgb(57, 220, 214);;">Name</label>
+            <input class="form-control" type="text" formControlName="name" required placeholder="Enter Drink Name" style="border-radius: 15px; margin-top: 10px; margin-bottom: 10px; margin-left: 10px;" >
+          </div>
+
+          <div class="form-group"  style="margin-left: 40%;">
+            <label style="color: rgb(57, 220, 214);;">Glass Type</label>
+            <input class="form-control" type="text" formControlName="glassType" required  placeholder="Enter Glass Type" style="border-radius: 15px; margin-top: 10px; margin-bottom: 10px; margin-left: 10px;">
+          </div>
+   
+          <div class="form-group" style="margin-left: 40%;">
+            <label style="color: rgb(57, 220, 214);;" >Price</label>
+            <input class="form-control" type="number" formControlName="price" required  placeholder="Enter Price" style="border-radius: 15px; margin-top: 10px; margin-bottom: 10px; margin-left: 10px;">
+            <label style="color: rgb(57, 220, 214);">€</label>
+
+          </div>
+   
+          <div class="form-group" style="margin-left: 40%;">
+            <label style="color: rgb(57, 220, 214);">Alcohol</label>
+            <input class="form-control" type="text" formControlName="alcohol" required  placeholder="Enter alcoholic % " style="border-radius: 15px; margin-top: 10px; margin-bottom: 10px; margin-left: 10px;">
+            <label style="color: rgb(57, 220, 214);"> %</label>
+
+          </div>
+   
+          <div class="form-group" style="margin-left: 45%; ">
+            <button class="btn btn-primary btn-block" type="submit" style="border-radius: 10px; margin-top: 10px; margin-bottom: 10px; margin-left: 10px; background-color: darkmagenta; color: whitesmoke; box-shadow: black 2px 2px 2px 1px; ">Add Drink</button>
+          </div>
+        </form>
+    </div>
+  </div>

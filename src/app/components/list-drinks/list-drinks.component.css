@@ -1,0 +1,114 @@
+.btn.btn-sm.btn-primary {
+    color: green;
+}
+ body {
+    background-image: linear-gradient(to right,#259191, #ac5893);
+
+} 
+.container{
+    margin-left: 23%;
+    /* background-image: linear-gradient(to right,#259191, #ac5893); */
+    margin-top: 10px;
+    border-top: black;
+    border-width: 1px;
+    
+}
+td.listOfItems{
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+button.buttonEdit{
+    background-color: rgb(151, 17, 160);
+    border: 0.5px;
+    box-shadow:  rgb(106, 98, 98) 1px 1px 1px 1px;
+    border-bottom: 15px;
+}
+button.buttonDelete{
+    background-color: rgb(160, 17, 17);
+    border: 0.5px;
+    box-shadow:  rgb(106, 98, 98) 1px 1px 1px 1px;
+    border-bottom: 15px;
+}
+h2.DrinksMenu{
+    margin-left: 25%;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+/* .container, */
+.rotated-block {
+  display:block;
+}
+/* 
+.container {
+  background: #000000;
+  width: 600px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+ .rotated-block-left {
+  position: absolute;
+  z-index: 1;
+  width: 1px;
+  min-height: 100%;
+  background-color: black;
+  transform: rotate(0deg);
+  transform: skewY(-1deg);
+  
+
+}
+.rotated-block-right {
+    position: absolute;
+    z-index: 1;
+    width: 1px;
+    min-height: 100%;
+    background-color: black;
+    transform: rotate(0deg);
+    transform: skewY(1deg);
+    left: 73%;
+  }
+
+
+/* .content {
+  position: relative;
+  z-index: 3;
+  top: 35%;
+  left: 10%;
+} */
+
+
+/* .quote {
+    background: #000000;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  } */
+  .quote {
+    background-image: linear-gradient(to right, #ac5893, #259191);
+    content: '';
+    width: 33%;
+    display: block;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1deg);
+    transform: skewX(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+  }

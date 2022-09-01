@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h2 class="DrinksMenu">Cocktail Menu</h2>
+    </div>
+   
+    <div class="table-responsive">
+      <table class="table table-bordered" style="margin-left: 12% ;">
+        <thead>
+          <tr>
+            <!-- <th scope="col">Id</th> -->
+            <th scope="col">Name</th>
+            <br/>
+
+            <th scope="col">Glass Type</th>
+            <br/>
+
+            <th scope="col">Price</th>
+            <br/>
+
+            <th scope="col">Alcohol</th>
+            <br/>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr *ngFor="let cocktail of Cocktail; let i = index">
+            <!-- <th class="listOfItems" scope="row" >{{cocktail._id}}</th> -->
+            <td class="listOfItems" routerLink="/edit-drink/{{cocktail.name}}">{{cocktail.name}}</td>
+            <br/>
+
+            <td class="listOfItems">{{cocktail.glassType}}</td>
+            <br/>
+
+            <td class="listOfItems">{{cocktail.price}} €</td>
+            <br/>
+
+            <td class="listOfItems">{{cocktail.alcohol}} %</td>
+            <br/>
+
+            <td class="text-center"> <button class="buttonEdit"  routerLink="/edit-drink/{{cocktail._id}}">Edit</button></td>
+             <td class="text-center"><button class="buttonDelete" (click)="delete(cocktail._id, i)">Delete</button></td> 
+            
+            </tr>
+        </tbody>
+      </table>
+      <button class="button-item" style="border-radius: 20px; margin-left: 30%;">
+        <a class="nav-link" routerLinkActive="active" routerLink="/open-drink-list">Close Menu</a>
+      </button>
+    </div>
+  </div>

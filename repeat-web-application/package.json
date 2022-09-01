@@ -1,0 +1,57 @@
+{
+  "name": "repeat-web-application",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "http://localhost:3001": "ng http://localhost:3001"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~12.2.3",
+    "@angular/cdk": "^12.2.3",
+    "@angular/common": "~12.2.3",
+    "@angular/compiler": "~12.2.3",
+    "@angular/core": "~12.2.3",
+    "@angular/flex-layout": "^12.0.0-beta.34",
+    "@angular/forms": "~12.2.3",
+    "@angular/material": "^12.2.3",
+    "@angular/platform-browser": "~12.2.3",
+    "@angular/platform-browser-dynamic": "~12.2.3",
+    "@angular/router": "~12.2.3",
+    "@okta/okta-auth-js": "5.4.1",
+    "angularfire2": "^5.4.2",
+    "bootstrap": "^5.1.0",
+    "docker": "^1.0.0",
+    "firebase": "^9.0.1",
+    "hammerjs": "^2.0.8",
+    "mongoose": "^6.0.3",
+    "nodemon": "^2.0.12",
+    "rxjs": "~7.3.0",
+    "tslib": "^2.3.1",
+    "zone.js": "~0.11.4"
+  },
+
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.3",
+    "@angular/cli": "~12.2.3",
+    "@angular/compiler-cli": "~12.2.3",
+    "@types/jasmine": "~3.8.2",
+    "@types/node": "^16.7.8",
+    "i": "^0.3.6",
+    "jasmine-core": "~3.9.0",
+    "karma": "~6.3.4",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.1",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "npm": "^7.21.1",
+    "typescript": "~4.4.2"
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.",
+  "main": "karma.conf.js",
+  "author": "",
+  "license": "ISC"
+}
